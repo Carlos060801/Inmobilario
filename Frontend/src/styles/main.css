@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f3f4f6;
+}
+
+.buscador {
+    padding: 20px;
+}
+
+.propiedades {
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+}
