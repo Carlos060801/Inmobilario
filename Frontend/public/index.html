@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inmobiliaria App</title>
+    <title>NEXUM Gestión Patrimonial y Jurídica</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- 🔹 NAVBAR -->
     <header class="navbar">
-        <h1>🏠 Inmobiliaria</h1>
-        <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="menu">
             <a href="#">Inicio</a>
             <a href="#">Propiedades</a>
             <a href="#">Login</a>
+
+            <div class="hamburguesa">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
+
     </header>
 
     <!-- 🔹 HERO / BIENVENIDA -->
     <section class="hero">
         <h2>Encuentra tu hogar ideal</h2>
-        <p>Compra, vende o arrienda propiedades fácilmente</p>
-        <button>Ver propiedades</button>
+        <p>Compra, vende o arrienda propiedades fácilmente con respaldo jurídico y asesoría personalizada.</p>
+        <button class="btn">Ver propiedades</button>
     </section>
 
     <!-- 🔹 BUSCADOR -->
@@ -37,7 +46,7 @@
                 <option>Casa</option>
                 <option>Apartamento</option>
             </select>
-            <button type="submit">Buscar</button>
+            <button class="btn" type="submit">Buscar</button>
         </form>
     </section>
 
@@ -45,26 +54,53 @@
     <section class="propiedades">
         <h3>Propiedades disponibles</h3>
 
+        
         <div class="card">
-            <h4>Casa en Neiva</h4>
-            <p>$200.000.000</p>
-            <button>Ver más</button>
+             <h4>Casa en Neiva</h4>
+                <p>$200.000.000</p>
+            <button class="btn">Ver más</button>
         </div>
 
         <div class="card">
             <h4>Apartamento en Bogotá</h4>
             <p>$350.000.000</p>
-            <button>Ver más</button>
+            <button class="btn">Ver más</button>
         </div>
+        
+        
 
+    </section>
+
+    <section class="nosotros">
+        <h3>Sobre Nosotros</h3>
+        <p>En NEXUM brindamos gestión patrimonial integral y asesoría jurídica especializada.
+        Nuestra misión es proteger tu inversión y garantizar procesos transparentes..</p>
+    </section>
+
+    <section class="contacto">
+        <h3>Contacto</h3>
+        <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+
+        <form action="">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea placeholder="Mensaje"></textarea>
+            <button class="btn" type="submit">Enviar</button>
+        </form>
     </section>
 
     <!-- 🔹 FOOTER -->
     <footer>
-        <p>© 2026 Inmobiliaria App</p>
+        <p>© 2026 NEXUM Gestión Patrimonial y Jurídica</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
     <!-- JS -->
     <script src="../src/main.js"></script>
+
 </body>
 </html>
