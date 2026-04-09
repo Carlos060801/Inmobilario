@@ -14,6 +14,7 @@ body {
     top: 0;          
     width: 100%;    
     z-index: 1000;   
+    background: linear-gradient(to bottom, rgba(10,10,10,0.95), transparent);
     
 }
 
@@ -40,17 +41,32 @@ body {
 .hero {
     height: 80vh;
     margin-top: 75px;
-    text-align: center;
+    text-align: left, ;
     padding: 50px;
     background: #f3f4f6;
     background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1560518883-ce09059eeffa");
     background-size: cover;
 }
 
+.hero-text {
+    color: #f4c1188d;
+    width: 400px;
+    text-align: center;
+}
+
 .buscador {
     padding: 20px;
     text-align: center;
+    border-top: 1px solid #C9A227;
+    padding: 2rem 4rem;
 }
+
+.buscador form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 
 .propiedades {
     padding: 20px;
@@ -86,4 +102,118 @@ body {
     padding: 15px;
     margin: 10px 0;
     flex: 1;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contacto form {
+    max-width: 400px;
+    margin: 20px auto;
+    background:white ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contacto {
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px;
+    border: 1px solid #C9A227;
+    border-radius: 5px;
+  
+    
+}
+
+.nosotros{
+    text-align: center;
+
+}
+
+
+.footer {
+    background: #282828;
+    color: #C9A227;
+    padding: 15px;
+    text-align: center;
+}
+.redes a{
+    color: #C9A227;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: .3s;
+    text-align: center;
+}
+
+.redes a:hover{
+    color:black;
+}
+
+.login{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),  url("https://images.unsplash.com/photo-1560518883-ce09059eeffa");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #C9A227;
+    border-radius: 5px;
+}
+    
+.login-container input :focus{
+    outline: none;
+    border: solid #C9A227;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #C9A227;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recuperar {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.recuperar a {
+    font-size: 10px;
+    color: #C9A227;
+    text-decoration: none;
+}
+
+.recuperar a:hover {
+    text-decoration: underline;
+    color: black;
 }
