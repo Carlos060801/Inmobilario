@@ -41,11 +41,13 @@ body {
 .hero {
     height: 80vh;
     margin-top: 75px;
-    text-align: left, ;
     padding: 50px;
-    background: #f3f4f6;
-    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1560518883-ce09059eeffa");
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;         
+    background: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)), url("https://images.unsplash.com/photo-1560518883-ce09059eeffa");
     background-size: cover;
+    background-position: center;
 }
 
 .hero-text {
