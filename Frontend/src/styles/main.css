@@ -282,3 +282,158 @@ body {
             padding: 20px;
         }
 }
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.card-propiedad {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.03s;
+}
+
+.card-propiedad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}   
+
+.imagen {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-propiedad:hover .imagen img {
+    transform: scale(1.1);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #C9A227;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}   
+
+.contenido {
+    padding: 20px;
+    text-align: left;
+}
+
+.ubicacion {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.contenido h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.precio {
+    color: #C9A227;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}   
+
+.descripcion {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}   
+
+.caracteristicas {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #555;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+} 
+
+.caracteristicas div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}   
+
+.caracteristicas i{
+    color: #C9A227;
+}
+
+.btn-contacto {
+    width: 100%;
+    padding: 10px;
+    background: #C9A227;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.03s;
+}
+
+.btn-contacto:hover {
+    background: black;
+    color: #C9A227;
+}   
+
+header {
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.95), transparent);
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 28px;
+    color: #C9A227;
+    padding: 60px;
+}
+
+.buscador-propiedades h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.buscador-propiedades form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+     
+}
+
+.buscador-propiedades form select, 
+.buscador-propiedades form input {
+    padding: 10px;
+    border: 1px solid #C9A227;
+    border-radius: 5px;
+    
+}

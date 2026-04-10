@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propiedades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/styles/main.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html" class="btn">Inicio</a>
+            <a href="#" class="btn">Propiedades</a>
+            <a href="login.html" class="btn">Login</a>
+        </nav>
+
+        <div class="hamburguesa">
+                <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+    
+
+    <div class="titulo-seccion">
+        <p>Encuentra tu hogar ideal</p>
+    </div>
+
+    <section>
+        <div class="buscador-propiedades">
+            <h3>Buscar propiedades</h3>
+            <form>
+                <input type="text" placeholder="Ciudad">
+                <input type="text" placeholder="Precio maximo">
+                <select>
+                    <option>Tipo</option>
+                    <option>Casa</option>
+                    <option>Apartamento</option>
+                </select>
+                <button class="btn" type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="propiedades ">
+       <div class="contenedor ">
+            <article class="card-propiedad">
+                <div class="imagen">
+                    <span class="badge">venta</span>
+                    <img src="casa.jpg" alt="casa">
+                </div>
+
+                <div class="contenido">
+                    <p class="ubicacion">Neiva, Colombia</p>
+                    <h2>Casa en venta bien ubicada en Neiva</h2>
+                    <p class="precio">$200.000.000</p>
+                    <p class="descripcion">Casa de 3 habitaciones, 2 baños, cocina equipada, sala amplia y jardín. Cerca de colegios y supermercados.</p>
+
+                    <div class="caracteristicas">
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <span>3 habitaciones</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-bath"></i>
+                            <span>2 baños</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-utensils"></i>
+                            <span>cocina equipada</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-contacto">contacto</button>
+                </div>
+
+            </article>
+
+            <!--  tarjetas 2  -->
+
+            <article class="card-propiedad">
+                <div class="imagen">
+                    <span class="badge">Arriendo</span>
+                    <img src="apartamento.jpg" alt="apartamento">
+                </div>
+
+                <div class="contenido">
+                    <p class="ubicacion">Bogota, Colombia</p>
+                    <h2>Apartamento en arriendo en Bogota</h2>
+                    <p class="precio">$3.500.000/mes</p>
+                    <p class="descripcion">Apartamento de 3 habitaciones, 2 baños, cocina equipada, sala amplia, paqueadero. Cerca de colegios y supermercados.</p>
+
+                    <div class="caracteristicas">
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <span>3 habitaciones</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-bath"></i>
+                            <span>2 baños</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-utensils"></i>
+                            <span>cocina equipada</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <span>paqueadero</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-contacto">contacto</button>
+                </div>
+
+            </article>
+       </div>
+    
+    </section>
+</body>
+</html>
