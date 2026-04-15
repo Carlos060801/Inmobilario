@@ -290,6 +290,7 @@ body {
     padding: 30px;
     margin: 0 auto;
     
+    
 
 }
 
@@ -391,12 +392,19 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.03s;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .btn-contacto:hover {
     background: black;
     color: #C9A227;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
 }   
+
 
 header {
     color: white;
