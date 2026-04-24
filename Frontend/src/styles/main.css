@@ -243,6 +243,10 @@ body {
         width: 200px;
         padding: 20px;
     }
+
+    .menu--open {      
+        display: flex;
+    }
     
     .hamburguesa {
         display: block;
